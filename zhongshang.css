@@ -1,0 +1,106 @@
+body{
+	background-image: url(images/background3.png);
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size:1520px;
+	width: 1500px;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+h4{
+	text-align: right;
+	color: white;
+}
+table{
+	width: 1000px;
+	height: 250px;
+	color: white;
+}
+hr{
+	border-width: 5px;
+	color: white;
+	width: 1500px;
+}
+#outdiv{
+	width:1500px ;
+	height: 700px;
+}
+#div1{
+	margin-left: 10px;
+	width: 200px;
+	height: 700px;
+	background-size: cover;
+	background-color: skyblue;
+	float: left;
+	opacity: 0.8;
+}
+#div2{
+	margin-right: 30px;
+	width: 1200px;
+	height: 700px;
+	background-size: cover;
+	background-color: white;
+	float: right;
+	opacity: 0.6;
+}
+#divrule{
+	float: right;
+	margin-right: 100px;
+}
+#p1{
+	font-size: 24px;
+}
+#p3{
+	font-size: 24px;
+	font-weight: 700;
+}
+a{
+	text-decoration: none;
+	color: chocolate;
+	font-weight: 500;
+	font-size: 16px;
+}
+#ps{
+	color: red;
+	font-weight: 500;
+	font-size: 16px;
+}
+#prule{
+	font-weight: 700;
+	font-size: 17px;
+	color: red;
+}
+#divs{
+	float: left;
+	width: 500px;
+	height: 700px;
+}
+#button1{
+	width: 80px;
+	height: 40px;
+	margin-left: 120px;
+	font-size: 20px;
+	font-weight: 700;
+}
+#pr{
+	margin-left: 20px;
+	font-weight: 700;
+}
+#pjieguo{
+	margin-left: 20px;
+	font-weight: 700;
+}
+#xuanze{
+	margin-left: 1.25rem;
+}
+#xuanzezi{
+	font-weight: 700;
+	color: red;
+}
+#areturn{
+	text-decoration: none;
+	color: red;
+	font-weight: 600;
+	font-size: 25px;

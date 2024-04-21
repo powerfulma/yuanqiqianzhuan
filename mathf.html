@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			元气骑士前传防御计算
+		</title>
+	<link types="test/css" rel="stylesheet" href="mathf.css">
+	<script src="mathf.js"></script>
+	</head>
+	<body>
+		<h1>欢迎使用此计算器</h1>
+		<h4>制作人-元气骑士手速哥(别看了，就我一个人...)</h4>
+		<hr />
+		<div id="outdiv">
+		<div id="div1">
+			<header>
+				<p id="p1">计算器种类选择</p>
+			</header>
+			<a href="zhongshang.html">1. 总伤计算</a><br>
+			<a href="maths.html">2. 三维（力敏智转物伤法伤混合伤计算）</a><br>
+			<p>3.召唤物能力计算（开发中...）</p><br>
+			<p id="ps">4. 防御和免伤计算</p>
+			<a href="mathq.html">5. 其他类型计算</a><br>
+			<p id="p3">一个人能力有限<br>计算器会慢慢更新</p>
+		</div>
+		<div id="div2">
+			<div id="divzhuti">
+				<div id="divs">
+					<a id="areturn" href="super.html">返回首页<<</a>
+					<p id="pr">
+						请输入自身防御力：<input type="number" id="number1" placeholder="必填"/><br>
+						请输入自身伤害减免：<input type="number" id="numberm" placeholder="必填"/>%<br>
+						请输入敌方基础值（不知道的填“0”）：<input type="number" id="number2" placeholder="知道就写"/><br>
+						注意：由于敌方的基础值为变量，但不为0，所以不知道基础值多少就默认为1，如果你知道怪物基础值，则可以输入基础值<br>
+						请输入自身其他的抗性（不填默认为0）<br>
+						自身火抗<input type="number" id="number3" placeholder="必填"/>%<br>
+						自身冰抗<input type="number" id="number4" placeholder="必填"/>%<br>
+						自身电抗<input type="number" id="number5" placeholder="必填"/>%<br>
+						自身毒抗<input type="number" id="number6" placeholder="必填"/>%<br>
+						自身光抗<input type="number" id="number7" placeholder="必填"/>%<br>
+						自身暗抗<input type="number" id="number8" placeholder="必填"/>%<br>
+					</p>
+					<button onclick="outputResult()" id="button1">计算</button>
+					<p id="jieguo">计算结果：</p>
+					<p id="pjieguo">
+						最终受到的伤害为原本的 <span id="outputgetshanghaibfb"></span>倍<br>
+						火焰对你的伤害为原本的 <span id="outputgethuokang"></span>倍<br>
+						冰冻对你的伤害为原本的 <span id="outputgetbingkang"></span>倍<br>
+						电击对你的伤害为原本的 <span id="outputgetdiankang"></span>倍<br>
+						毒素对你的伤害为原本的 <span id="outputgetdukang"></span>倍<br>
+						光明对你的伤害为原本的 <span id="outputgetguangkang"></span>倍<br>
+						冰冻对你的伤害为原本的 <span id="outputgetankang"></span>倍<br>
+					</p>
+				</div>
+				<div id="divrule">
+					<p id="prule">
+						计算原理:<br>防御补正=敌方基础值/（敌方基础值+自身防御力）<br>
+						对应属性抗性修正=25/(25+对应属性抗性值)<br>
+						受到的物理攻击=怪物物理伤害×防御补正<br>
+						受到的元素类攻击=怪物元素伤害×防御补正×相应元素抗性补正
+						
+					</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

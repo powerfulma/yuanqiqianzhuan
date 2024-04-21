@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			元气骑士前传总伤计算器
+		</title>
+	<link types="test/css" rel="stylesheet" href="zhongshang.css">
+	<script src="zhongshang.js"></script>
+	</head>
+	<body>
+		<h1>欢迎使用此计算器</h1>
+		<h4>制作人-元气骑士手速哥(别看了，就我一个人...)</h4>
+		<hr />
+		<div id="outdiv">
+		<div id="div1">
+			<header>
+				<p id="p1">计算器种类选择</p>
+			</header>
+			<p id="ps">1.总伤计算</p>
+			<a href="maths.html">2. 三维（力敏智转物伤法伤混合伤计算）</a><br>
+			<p >3.召唤物能力计算（开发中...）</p><br>
+			<a href="mathf.html">4. 防御和免伤计算</a><br>
+			<a href="mathq.html">5. 其他类型计算</a><br>
+			<p id="p3">一个人能力有限<br>后续计算器会慢慢更新</p>
+		</div>
+		<div id="div2">
+			
+		<div id="divzhuti">
+				<div id="divs">
+				<a id="areturn" href="super.html">返回首页<<</a>
+				<p id="pr">
+					请输入自身基础值：<input type="number" id="number1" placeholder="自身基础值"/><br />
+					请输入羁绊里的伤害修正：<input type="number" id="number2" placeholder="没有就填100"/>%<br />
+					输入此时攻击类型的攻击加成：<input type="number" id="number4" placeholder="物理加成/元素加成"/>%<br>
+					请输入全体伤害加成：<input type="number" id="number5" placeholder="必填"/>%<br />
+					请输入额外伤害加成量：<input type="number" id="number6" placeholder="没有就不用填"/>%<br />
+					选择是否暴击：<select id="chance" onchange="toggleInputBox()">
+								<option value="false">否</option>
+								<option value="true">是</option>
+								</select>
+								
+								<div id="xuanze" style="display: none;">
+									<p id="xuanzezi">
+									暴击伤害=<input type="number" id="chancet" placeholder="请填写暴击伤害加成">%
+									</p>
+								</div>
+								
+					
+				</p>
+				<button onclick="outputResult()" id="button1">计算</button>
+				<p id="pjieguo">
+					计算结果（以下结果均排除敌方防御力和抗性）:<br>
+					平a击中伤害=<span id="outputjizhong"></span><br />
+					总伤为=<span id="outputzong"></span>
+				</p>
+			</div>
+			<div id="divrule">
+			<p id="prule">
+				计算原理:<br/>
+				一a击中伤害（不计入防御）=基础值（即”基于xx“）×各种类型的伤害修<br>
+				正总和×暴击因子×（1＋当前触发的元素伤害加<br />
+				成量%）×（1＋全体伤害加成%）<br />
+				总伤害=击中伤害×（1+额外伤害加成）<br>
+				ps：为什么要分击中伤害和总伤害？<br />
+				答：因为击中伤害是会显示到敌人身上，而额外伤害是让总伤害<br />发生质变的原因，额外伤害量的数值会从敌怪头上掉出来
+			</p>
+			</div> 
+		</div>
+		</div>
+	</body>
+</html>

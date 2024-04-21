@@ -1,0 +1,75 @@
+body{
+	background-image: url(images/background4.png);
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size:1700px;
+	width: 1500px;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+h4{
+	text-align: right;
+	color: deepskyblue;
+}
+table{
+	width: 1000px;
+	height: 250px;
+	color: white;
+}
+hr{
+	border-width: 5px;
+	color: white;
+	width: 1500px;
+}
+a{
+	text-decoration: none;
+	color: chocolate;
+	font-weight: 500;
+	font-size: 16px;
+}
+#outdiv{
+	width:1500px ;
+	height: 700px;
+}
+#div1{
+	margin-left: 10px;
+	width: 200px;
+	height: 700px;
+	background-size: cover;
+	background-color: skyblue;
+	float: left;
+	opacity: 0.8;
+}
+#div2{
+	margin-right: 30px;
+	width: 1200px;
+	height: 700px;
+	background-size: cover;
+	background-color: white;
+	float: right;
+	opacity: 0.6;
+}
+#divs{
+	float: left;
+	width: 1000px;
+	height: 700px;
+}
+#areturn{
+	text-decoration: none;
+	color: red;
+	font-weight: 600;
+	font-size: 25px;
+}
+#button1{
+	width: 50px;
+	height: 30px;
+	margin-left: 120px;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: greenyellow;
+}
+#pr{
+	margin-left: 20px;
+}

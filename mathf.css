@@ -1,0 +1,102 @@
+body{
+	background-image: url(images/background2.jpg);
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size:1700px;
+	width: 1500px;
+}
+h1{
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: white;
+	width: 300px;
+	height: 42px;
+	background-color: deepskyblue;
+}
+h4{
+	text-align: right;
+	color: white;
+}
+hr{
+	border-width: 5px;
+	color: white;
+	width: 1500px;
+}
+#outdiv{
+	width:1500px ;
+	height: 700px;
+}
+#div1{
+	margin-left: 10px;
+	width: 200px;
+	height: 700px;
+	background-size: cover;
+	background-color: skyblue;
+	float: left;
+	opacity: 0.8;
+}
+#div2{
+	margin-right: 30px;
+	width: 1200px;
+	height: 700px;
+	background-size: cover;
+	background-color: white;
+	float: right;
+	opacity: 0.6;
+}
+a{
+	text-decoration: none;
+	color: chocolate;
+	font-weight: 500;
+	font-size: 16px;
+}
+#p3{
+	font-size: 24px;
+	font-weight: 700;
+}
+#ps{
+	color: red;
+	font-weight: 500;
+	font-size: 16px;
+}
+#areturn{
+	text-decoration: none;
+	color: red;
+	font-weight: 600;
+	font-size: 25px;
+}
+#divrule{
+	float: right;
+	margin-right: 100px;
+}
+#button1{
+	width: 80px;
+	height: 40px;
+	margin-left: 120px;
+	font-size: 20px;
+	font-weight: 700;
+}
+#divs{
+	float: left;
+	width: 500px;
+	height: 1000px;
+}
+#pr{
+	margin-left: 20px;
+}
+#prule{
+	font-weight: 700;
+	font-size: 17px;
+	color: red;
+}
+#pjieguo{
+	margin-left: 20px;
+	font-weight: 700;
+}
+#jieguo{
+	font-weight:700;
+	font-size:20px;
+	color:blue;
+	font-weight: 700;
+}

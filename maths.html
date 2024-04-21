@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			元气三维计算器
+		</title>
+	<link types="test/css" rel="stylesheet" href="maths.css">
+	<script src="maths.js"></script>
+	</head>
+	<body>
+		<h1>欢迎使用此计算器</h1>
+		<h3>制作人-元气骑士手速哥(别看了，就我一个人...)</h4>
+		<hr />
+		<div id="outdiv">
+		<div id="div1">
+			<header>
+				<p id="p1">计算器种类选择</p>
+			</header>
+			<a href="zhongshang.html">1. 总伤计算</a><br>
+			<p id="ps">2. 三维（力敏智转物伤法伤混合伤计算）</p>
+			<p>3.召唤物能力计算（开发中...）</p><br>
+			<a href="mathf.html">4. 防御和免伤计算</a><br>
+			<a href="mathq.html">5. 其他类型计算</a><br>
+			<p id="p3">一个人能力有限<br>计算器会慢慢更新</p>
+		</div>
+		<div id="div2">
+			<div id="divzhuti">
+			<div id="divs">
+			<a id="areturn" href="super.html">返回首页<<</a>
+			<p id="pr">
+				请输入力量属性：<input type="number" id="number1" placeholder="必填"/><br>
+				请输入敏捷属性：<input type="number" id="number2" placeholder="必填"/><br>
+				请输入智力属性：<input type="number" id="number3" placeholder="必填"/>
+			</p>
+			<button onclick="outputResult()" id="button1">计算</button>
+			<p id="pjieguo">
+				计算结果为:<br>
+				攻击力=<span id="outputliliang"></span><br>
+				法强=<span id="outputfaqiang"></span><br>
+				混合攻击力=<span id="outputhunhe"></span>
+			</p>
+			</div>
+			<div id="divrule">
+			<p id="prule">
+				计算原理:<br>攻击力=（力量+敏捷）/3<br>法强=智力/3<br>混合攻击力=<br>（攻击力和法强哪个大取哪个+3×攻击力和法强哪个小取哪个）/2
+			</p>
+			</div> 
+		</div>
+		</div>
+	</body>
+</html>

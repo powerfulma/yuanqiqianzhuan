@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>其他类型计算</title>
+	<link types="test/css" rel="stylesheet" href="mathq.css">
+	<script src="mathq.js"></script>
+		</head>
+		<body>
+			<h1>欢迎使用此计算器</h1>
+			<h4>制作人-元气骑士手速哥(别看了，就我一个人...)</h4>
+			<hr />
+			<div id="outdiv">
+			<div id="div1">
+				<header>
+					<p id="p1">计算器种类选择</p>
+				</header>
+				<a href="zhongshang.html">1. 总伤计算</a><br>
+				<a href="maths.html">2. 三维（力敏智转物伤法伤混合伤计算）</a><br>
+				<p>3.召唤物能力计算（开发中...）</p><br>
+				<a href="mathf.html">4. 防御和免伤计算</a><br>
+				<p>5.其他类型计算</p><br>
+				<p id="p3">一个人能力有限<br>计算器会慢慢更新</p>
+			</div>
+			<div id="div2">
+				<div id="divs">
+				<a id="areturn" href="super.html">返回首页<<</a>
+				<p id="pr">
+					技能cd计算：<input type="number" id="cd" placeholder="填入技能原本cd"/>秒 <input type="number" id="cdc" placeholder="填入技能冷却减少量"/>%
+							选择此时手上的武器：<select id="cdw" onchange="toggleInputBox()">
+								<option value="1">剑盾</option>
+								<option value="2">弓箭</option>
+								<option value="3">法典（媒介/法环）</option>
+								<option value="4">法杖</option>
+								<option value="5">大剑</option>
+								<option value="6">双刃</option>
+								<option value="7">长枪盾</option>
+								<option value="8">长矛</option>
+								<option value="9">弩</option>
+								<option value="10">拳套</option>
+								<option value="11">红色品质的武器</option>
+								</select>
+				</p>
+				<button onclick="outputResult()" id="button1">计算</button>
+				<p id="pr">最终cd将为：<span id="outputcd"></span>秒</p>
+				<p id="pr">目前其他内容计算只有这么多，还想要我增添其他的计算可以qq群里@我或者官群里@我都是可以的</p>
+			</div>
+			</div>
+		</body>
+	</html>
